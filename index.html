@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Drag and Drop Puzzle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+
+    <audio id="myAudio">
+  <source src="audio/pig.mp3"></source>
+  <source src="audio/pig.ogg"></source>
+  Your browser isn't invited for super fun audio time.
+</audio>
+
+    <audio id="myAudioTwo">
+  <source src="audio/cow.mp3"></source>
+  <source src="audio/cow.ogg"></source>
+  Your browser isn't invited for super fun audio time.
+</audio>
+
+    <audio id="myAudioThree">
+  <source src="audio/sheep.mp3"></source>
+  <source src="audio/sheep.ogg"></source>
+  Your browser isn't invited for super fun audio time.
+</audio>
+
+    <audio id="myAudioFour">
+  <source src="audio/horse.mp3"></source>
+  <source src="audio/horse.ogg"></source>
+  Your browser isn't invited for super fun audio time.
+</audio>
+
+    <audio id="myAudioFive">
+  <source src="audio/rooster.mp3"></source>
+  <source src="audio/rooster.ogg"></source>
+  Your browser isn't invited for super fun audio time.
+</audio>
+
+    <div class="container">
+        <div>
+            <p>Spoji slike životinja sa njihovim imenima na engleskom jeziku. Popuni sva polja i zabavi se :)</p>
+        </div>
+        <div class="dragzone">
+            <img id="sheep" class="draggable" alt="sheep" data-piece="two" src="img/sheep.jpg" />
+            <img id="cow" class="draggable" alt="cow" data-piece="one" src="img/cow.jpg" />
+            <img id="rooster" class="draggable" alt="rooster" data-piece="three" src="img/rooster.jpg" />
+            <img id="horse" class="draggable" alt="horse" data-piece="four" src="img/horse.jpg" />
+            <img id="pig" class="draggable" alt="pig = svinja" data-piece="five" src="img/pig.jpg" />
+        </div>
+
+        <div class="dropzone">
+            <div class="row">
+                <div id="cow-container" data-box="one" style="width:210px; height:210px;">
+                    <p>A Cow</p>
+                </div>
+                <div id="sheep-container" data-box="two" style="width:210px; height:210px;">
+                    <p>A Sheep</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="rooster-container" data-box="three">
+                    <p>A Rooster</p>
+                </div>
+                <div id="horse-container" data-box="four">
+                    <p>A Horse</p>
+                </div>
+                <div id="pig-container" data-box="five">
+                    <p>A Pig </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <canvas id="canvas" width="421" height="421">  </canvas>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="js/game.js"></script>
+
+
+
+</body>
+
+</html>
